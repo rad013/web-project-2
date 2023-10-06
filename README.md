@@ -28,7 +28,7 @@ The web application consists of six pages and two detail pages, each designed to
    
 4. Cart Page
 
-    ![image](https://github.com/rad013/web-project-2/assets/115696959/f6515b21-f6d5-46f9-898b-50767b4279cc)
+    ![image](https://github.com/rad013/web-project-2/assets/115696959/a13b39dd-02a4-4149-98c2-7d91b3c7a367)
 
     • Display the list of products that users have added to their shopping cart.
 

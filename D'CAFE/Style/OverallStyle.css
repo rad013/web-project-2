@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    /* line-height: 1; */
+    /* background-color: aqua; */
+}
+
+#navBar-con{
+    background-color: black !important;
+}
+
+.container-fluid{
+    padding: 0% 10% !important;
+}
+
+.navbar-collapse{
+    flex-grow: 0 !important;
+}
+
+.navbar-brand{
+    color: white !important;
+    font-weight: 800 !important;
+    margin-right: 50%;
+}
+
+.nav-link{
+    color: white !important;
+    font-size: 16px !important;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+.content{
+    background-color: #131212;
+
+    /* background-image: url('../res/seamless background.png');
+    background-size: contain; */
+    color: white;
+    height: auto;
+    padding: 3rem 25rem 3rem;
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+footer{
+    background-color: #000000;
+    color: white;
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    font-size: 16px !important;
+}
+
+@media screen and (max-width: 1100px) {
+    header{
+        padding: 0;
+    }
+
+    .navbar-brand{
+        color: white !important;
+        font-weight: 800 !important;
+        margin-right: 40%;
+    }
+
+    /* .hamburger{
+        background-color: violet;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        width: 2.4rem;
+        height: 2rem;
+
+        margin-left: 60%;
+    } */
+
+    /* .hamburger:hover{
+        cursor: pointer;
+    }
+
+    .hamburger:hover .menuBar{
+        transform: scaleY(1);
+        background-color: violet;
+    } */
+
+    .menuBar{
+        background-color: #1f1e1e;
+        position: absolute;
+        top: 6.2rem;
+        left: 0%;
+        /* display: flex; */
+        /* flex-direction: column; */
+        height: 8rem;
+        width: 100%;
+        align-items: center;
+        margin: 0%;
+        padding: 0%;
+        
+        transform: scaleY(0);
+        transition: transform 500ms;
+        transform-origin: top;
+    }
+
+    .content{
+        padding: 3rem 3rem 3rem;
+    }
+
+    .menuBar{
+        flex-direction: column;
+    }
+}
+
+

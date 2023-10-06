@@ -1,0 +1,49 @@
+.carousel-item img {
+  width: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  border-radius: 8px;
+}
+
+.card-img-top {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.card {
+  position: relative;
+  cursor: pointer;
+}
+.card:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: white !important;
+  opacity: 0.4;
+  pointer-events: none;
+}
+.card-img-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+body {
+  background-color: #252525;
+}
+
+.container {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}

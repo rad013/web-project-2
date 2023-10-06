@@ -1,0 +1,147 @@
+.content {
+    background-image: url('../res/image slider coffee image 1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content{
+    padding: 0;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.form-upper-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5.25rem;
+    padding-bottom: 5.25rem;
+    margin-bottom: auto;
+
+}
+
+.form-container {
+    width: auto;
+    padding: 2rem 3rem 3rem 3rem;
+    background-color: whitesmoke;
+    /* border: 3px solid black; */
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    border-radius: 10px;
+    color: black;
+}
+
+#form-title {
+    padding-bottom: 30px;
+}
+
+#registration-form {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    /* align-items: center; */
+}
+
+.left-form, .right-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#registration-form label, .salutation-container {
+    padding-top: 15px;
+}
+
+#registration-form label {
+    font-size: 125%;
+    font-weight: bold;
+}
+
+#submitBtn {
+    margin-top: 15px;
+    padding: 0.25rem 0rem 0.25rem 0rem;
+    width: 50%;
+    height: auto;
+    align-self: center;
+    border-radius: 15px;
+    font-size: 125%;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+
+#firstName, #lastName, #email, #phone, #date, .time {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    background-color: white;
+    outline: none;
+    height: 40px;
+    /* width: auto; */
+}
+
+.success-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+  
+.success-message img {
+    width: 100px;
+    height: 100px;
+}
+  
+.success-message p {
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: 125%;
+}
+
+#returnBtn {
+    margin-top: 2rem;
+    padding: 0.25rem 0rem 0.25rem 0rem;
+    width: 50%;
+    height: auto;
+    align-self: center;
+    border-radius: 15px;
+    font-size: 125%;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+
+#submitBtn:hover{
+    background-color: white;
+    color: black;
+}
+
+@media only screen and (max-width: 1000px) {
+    .form-container {
+        width: 75%;
+        height: auto;
+        padding: 1rem;
+    }
+
+    #registration-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #registration-form hr {
+        width: 100%;
+    }
+
+    .left-form, .right-form {
+        width: 100%;
+    }
+
+    .left-form input {
+        width: 100%;
+    }
+  }

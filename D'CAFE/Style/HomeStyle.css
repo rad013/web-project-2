@@ -1,0 +1,137 @@
+
+.content-slider{
+    background-color: thistle;
+    width: auto;
+    height: 50rem;
+}
+
+.img-con{
+    background-color: #131212;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.content{
+    background-color: #131212;
+
+    /* background-image: url('../res/seamless background.png');
+    background-size: contain; */
+    color: white;
+    height: auto;
+    padding: 3rem 25rem 3rem;
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+
+.content-product-type{
+    background-color: #252525;
+    height: auto;
+    padding: 3rem 15rem 3rem;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+}
+
+.category-con{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.category{
+    background: whitesmoke;
+    width: 15rem;
+    height: 20rem;
+    color: black;
+    text-align: center;
+}
+
+.category-title{
+    padding-top: 110%;
+}
+
+#cat-1{
+    background-image: url('../res/Menu/Appetizers/Bruschetta.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#cat-2{
+    background-image: url('../res/Menu/MainCourses/pan-seared-salmon.jpg');
+    background-size: cover;
+    background-position-y: -3rem;
+}
+#cat-3{
+    background-image: url('../res/Menu/Snacks/Mozzarella-Sticks.jpg');
+    background-size: cover;
+    background-position-y: 1rem;
+}
+#cat-4{
+    background-image: url('../res/Menu/Beverages/Banana-Milkshake.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.cat-link{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .content-slider{
+        /* background-color: thistle; */
+        width: auto;
+        height: 50%;
+    }
+
+    .category-con{
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 10%;
+    }
+
+    #cat-1{
+        /* background-image: url('../res/menu/Appetizers/Bruschetta.jpg'); */
+        background-size: cover;
+        background-position: center;
+        margin: 1rem;
+    }
+    #cat-2{
+        /* background-image: url('../res/Menu/MainCourses/Surf-and-Turf.jpg'); */
+        background-size: cover;
+        background-position-y: -3rem;
+        margin: 1rem;
+    }
+    #cat-3{
+        /* background-image: url('../res/menu/Snacks/French-fries.jpg'); */
+        background-size: cover;
+        background-position-y: 1rem;
+        margin: 1rem;
+    }
+    #cat-4{
+        /* background-image: url('../res/menu/Beverages/Banana-Milkshake.jpg'); */
+        background-size: cover;
+        background-position: center;
+        margin: 1rem;
+    }
+
+    .content-product-type{
+        padding: 3rem 3rem 3rem;
+    }
+
+    .content{
+        padding: 3rem 3rem 3rem;
+    }
+}

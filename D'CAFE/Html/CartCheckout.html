@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D'Cafe</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../Style/OverallStyle.css" />
+    <link rel="stylesheet" href="../Style/CheckOutStyle.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <nav id="navBar-con" class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Home.html">D'CAFE</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul id="navbar-style" class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="Menu.html">Our Menus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="CartCheckout.html">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Promo.html">Promotion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Reservation.html">Reservation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <section class="h-100 h-custom" style="background-color: #eee;">
+      <div class="container h-100 py-5">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col">
+            <div class="card shopping-cart" style="border-radius: 15px;">
+              <div class="card-body text-black">
+    
+                <div class="row">
+                  <div class="col-lg-6 px-5 py-4 style">
+    
+                    <h3 class="mb-5 pt-2 text-center fw-bold text-uppercase">Your products</h3>
+    
+                    <ul id="cart-items"></ul>
+    
+                    <hr class="mb-4" style="height: 2px; background-color: #1266f1; opacity: 1;">
+    
+                    <div class="styling d-flex justify-content-between p-2 mb-2" style="background-color: #e1f5fe;">
+                      <h5 class="fw-bold mb-0">Total:</h5>
+                      <h5 id="total-price" class="fw-bold mb-0"></h5>
+                    </div>
+    
+                  </div>
+                  <div class="col-lg-6 px-5 py-4">
+    
+                    <h3 class="mb-5 pt-2 text-center fw-bold text-uppercase">Payment</h3>
+    
+                    <form id="payment-form" class="mb-5">
+    
+                      <div class=“form-outline mb-4”>
+                        <label class=“form-label” for=“name”>Name</label><br>
+                        <input type=“text” id=“name” name=“name” class=“form-control form-control-lg” required />
+                        
+                      </div>
+    
+                      <div class=“form-outline mb-4”>
+                        <label class=“form-label” for=“card-number”>Card Number</label><br>
+                        <input type=“text” id=“card-number” name=“card-number” class=“form-control form-control-lg” required />
+                        <br><br>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6 mb-4">
+                          <div class="form-outline">
+                            <label class="form-label" for="card-expiration">Expiration</label><br>
+                            <input type="text" id="card-expiration" name="card-expiration" class="form-control form-control-lg" required />
+                            
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                          <div class="form-outline">
+                            <label class="form-label" for="cvv">CVV</label><br>
+                            <input type="password" id="cvv" name="cvv" class="form-control form-control-lg" required />
+                            
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <button type="submit" class="btn btn-primary btn-block btn-lg">Buy now</button>
+                      
+                      </form>
+                      
+                      </div>
+                      </div>
+                      
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                      </section>
+    
+    <script>
+      window.onload = () => {
+        const cartItemsElement = document.querySelector("#cart-items");
+        const totalPriceElement = document.querySelector("#total-price");
+        
+        let cartData = JSON.parse(localStorage.getItem("cartData")) || [];
+        
+        let totalPrice = 0;
+        
+        for (let itemData of cartData) {
+          let itemPrice = parseFloat(itemData.description2.slice(1));
+          totalPrice += itemPrice * itemData.quantity;
+          
+          let itemElement = document.createElement("li");
+          itemElement.classList.add("d-flex", "align-items-center", "mb-5");
+          itemElement.innerHTML = `
+            <div class="flex-shrink-0">
+              <img src="${itemData.src}" alt="Menu Image" style="width: 150px;">
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <a href="#!" class="float-end text-black" onclick="removeFromCart('${itemData.description1}')"><i class="fas fa-times"></i></a>
+              <h5 class="text-primary">${itemData.description1}</h5>
+              <h6 style="color: #9e9e9e;">${itemData.description2}</h6>
+              <div class="d-flex align-items-center">
+                <p class="fw-bold mb-0 me-5 pe-3">${itemData.description2}</p>
+                <div class="def-number-input number-input safari_only">
+                  <button onclick="decrementQuantity('${itemData.description1}')" class="minus">-</button>
+                  <input class="quantity fw-bold text-black" min="0" name="quantity" value="${itemData.quantity}" type="number">
+                  <button onclick="incrementQuantity('${itemData.description1}')" class="plus">+</button>
+                </div>
+              </div>
+            </div>
+          `;
+          cartItemsElement.appendChild(itemElement);
+        }
+        
+        totalPriceElement.textContent = `$${totalPrice.toFixed(2)}`;
+      };
+      
+      function incrementQuantity(description1) {
+        updateQuantity(description1, 1);
+      }
+      
+      function decrementQuantity(description1) {
+        updateQuantity(description1, -1);
+      }
+      
+      function updateQuantity(description1, delta) {
+        let cartData = JSON.parse(localStorage.getItem("cartData")) || [];
+        let itemIndex = cartData.findIndex(item => item.description1 === description1);
+        
+        if (itemIndex !== -1) {
+          cartData[itemIndex].quantity += delta;
+          
+          if (cartData[itemIndex].quantity === 0) {
+            cartData.splice(itemIndex, 1);
+          }
+          
+          localStorage.setItem("cartData", JSON.stringify(cartData));
+          
+          window.location.reload();
+        }
+      }
+      
+      function removeFromCart(description1) {
+        let cartData = JSON.parse(localStorage.getItem("cartData")) || [];
+        let itemIndex = cartData.findIndex(item => item.description1 === description1);
+        
+        if (itemIndex !== -1) {
+          cartData.splice(itemIndex, 1);
+          
+          localStorage.setItem("cartData", JSON.stringify(cartData));
+          
+          window.location.reload();
+        }
+      }
+
+        document.querySelector("#payment-form").addEventListener("submit", event => {
+        event.preventDefault();
+    
+    // TODO: Implement form submission
+        });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- FOOTER -->
+    <footer>&copy; D'Cafe 2023</footer>
+  </body>
+</html>

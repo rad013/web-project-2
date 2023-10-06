@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'Cafe</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../Style/OverallStyle.css" />
+    <link rel="stylesheet" href="../Style/ReservationStyle.css" />
+</head>
+<body>
+    <!-- HEADER -->
+    <nav id="navBar-con" class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Home.html">D'CAFE</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul id="navbar-style" class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="Menu.html">Our Menus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="CartCheckout.html">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Promo.html">Promotion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Reservation.html">Reservation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <Section class="content">
+      <div class="form-upper-container">
+        <div class="form-container">
+            <h1 id="form-title">D'Cafe Reservation Form</h1>
+            <form id="registration-form">
+                <div class="left-form">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName">
+                    <div class="salutation-container">
+                        <label for="salutation">Salutation:</label>
+                        <select name="salutation" id="salutation">
+                            <option value="select" selected disabled>Select</option>
+                            <option value="mr">Mr.</option>
+                            <option value="ms">Ms.</option>
+                            <option value="mrs">Mrs.</option>
+                        </select>
+                    </div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" id="phone" name="phone">
+                </div>
+                <hr>
+                <div class="right-form">
+                    <label for="date">Reservation Date:</label>
+                    <input type="date" id="date" name="date">
+                    <label for="time">Reservation Time:</label>
+                    <span class="timeDesc">(Opening hours: 09.00am - 05.59pm)</span>
+                    <input type="time" class="time" name="time">
+                    <label for="peopleQty">Number of People:</label>
+                    <input type="number" id="peopleQty" name="peopleQty" min="1">
+                    <label for="note">Note (optional):</label>
+                    <textarea name="note" id="note" cols="30" rows="4"></textarea>
+                    <button type="submit" id="submitBtn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </Section>
+
+    <script src="../Script/ReservationScript.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"
+      ></script>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; D'Cafe 2023
+    </footer>
+</body>
+</html>

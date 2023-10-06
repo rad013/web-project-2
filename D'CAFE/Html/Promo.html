@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'Cafe</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../Style/OverallStyle.css" />
+    <link rel="stylesheet" href="../Style/PromosStyle.css" />
+    <script src="../Script/PromoScript.js"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <nav id="navBar-con" class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Home.html">D'CAFE</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul id="navbar-style" class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="Menu.html">Our Menus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="CartCheckout.html">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Promo.html">Promotion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Reservation.html">Reservation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="banner">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://live.staticflickr.com/65535/52962452993_d1cff491f7_z.jpg"
+                class="d-block w-100"
+                alt="First slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://live.staticflickr.com/65535/52962142864_830be90242_z.jpg"
+                class="d-block w-100"
+                alt="Second slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://live.staticflickr.com/65535/52961999696_091d7e129b_z.jpg"
+                class="d-block w-100"
+                alt="Third slide"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+  
+      <!-- CONTENT DETAIL -->
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://live.staticflickr.com/65535/52961999981_5f19164c74_n.jpg"
+                class="card-img-top"
+                alt="..."
+                data-description="Looking for a quick and tasty lunch option on weekdays? D’CAFE has you covered with our weekday set lunch from $10.80+!"
+              />
+              <div class="card-img-overlay"></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://live.staticflickr.com/65535/52961999696_091d7e129b_z.jpg"
+                class="card-img-top"
+                alt="..."
+                data-description="Want to share a meal with your buddy? D’CAFE has the perfect offer for you. For only $29.90+"
+              />
+              <div class="card-img-overlay"></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://live.staticflickr.com/65535/52961999671_58544e0337_n.jpg"
+                class="card-img-top"
+                alt="..."
+                data-description="We know times are tough and you need a break. That’s why D’CAFE is offering you a Circuit Breaker May special: 20% off your entire bill! "
+              />
+              <div class="card-img-overlay"></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://live.staticflickr.com/65535/52961999751_6f0e0f805c_n.jpg"
+                class="card-img-top"
+                alt="..."
+                data-description="Are you feeling hungry and thirsty? Why not make it a set meal at D’CAFE? For a limited time only"
+              />
+              <div class="card-img-overlay"></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://live.staticflickr.com/65535/52962453233_e35df89bf7_z.jpg"
+                class="card-img-top"
+                alt="..."
+                data-description="Celebrate the festive season with D’CAFE’s christmas special combo!"
+              />
+              <div class="card-img-overlay"></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://live.staticflickr.com/65535/52962453143_8cd46f0155_z.jpg"
+                class="card-img-top"
+                alt="..."
+                data-description="D’CAFE is proud to present our new menu items that will tantalize your taste buds."
+              />
+              <div class="card-img-overlay"></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://live.staticflickr.com/65535/52961400297_4ab7b226de_z.jpg"
+                class="card-img-top"
+                alt="..."
+                data-description="If you’re looking for a delicious and affordable meal, look no further than D’CAFE’s menu combo special offer."
+              />
+              <div class="card-img-overlay"></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://live.staticflickr.com/65535/52962142864_830be90242_z.jpg"
+                class="card-img-top"
+                alt="..."
+                data-description="If you’re looking for a delicious and affordable meal, look no further than D’CAFE’s menu combo special offer."
+              />
+              <div class="card-img-overlay"></div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://live.staticflickr.com/65535/52961999521_99ba21c65b_z.jpg"
+                class="card-img-top"
+                alt="..."
+                data-description="D’CAFE is the place to go for mouthwatering chicken chop, burgers, and more. And now, you can enjoy our combos at a great price."
+              />
+              <div class="card-img-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"
+      ></script>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; D'Cafe 2023
+    </footer>
+</body>
+</html>

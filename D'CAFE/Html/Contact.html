@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'Cafe</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../Style/OverallStyle.css" />
+    <link rel="stylesheet" href="../Style/ContactStyle.css" />
+</head>
+<body>
+    <!-- HEADER -->
+    <nav id="navBar-con" class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Home.html">D'CAFE</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul id="navbar-style" class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="Menu.html">Our Menus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="CartCheckout.html">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Promo.html">Promotion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Reservation.html">Reservation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <!-- <Section class="content"> -->
+      <div class="content-container">
+        <div id="content-container">
+            <div class="contact-info">
+              <h1>Contact Information</h1>
+              <h2>You could contact us through:</h2>
+              <div id="contact-details">
+                <div class="contact-item">
+                  <img src="../res/phone.jpeg" alt="Phone Logo">
+                  <p>+6208118127318</p>
+                </div>
+                <div class="contact-item">
+                  <img src="../res/mail.jpeg" alt="Mail Logo">
+                  <p>d'cafe@gmail.com</p>
+                </div>
+                <h2>You could visit us at:</h2>
+                <div class="contact-item">
+                  <img src="../res/location.jpeg" alt="Location Logo">
+                  <p>Jl.kemanggisan raya no.3</p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="contact-form">
+                <div class="contact-form">
+                    <form>
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required>
+            
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" required>
+            
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+            
+                        <label for="phone-number">Phone Number</label>
+                        <input type="text" id="phone-number" name="phone-number" required>
+            
+                        <label>Select Subject?</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="subject" value="general-inquiry" required> General inquiry
+                            </label>
+                            <label>
+                                <input type="radio" name="subject" value="shipping-problem" required> Shipping Problem
+                            </label>
+                            <label>
+                                <input type="radio" name="subject" value="low-quality-product" required> Low quality product
+                            </label>
+                            <label>
+                                <input type="radio" name="subject" value="other" required> Other
+                            </label>
+                        </div>
+            
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+            
+                        <button class="button" type="submit" onclick="Submit()">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            </div>
+      </div>
+          
+    <!-- </Section> -->
+    <script src="ContactScript.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"
+      ></script>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; D'Cafe 2023
+    </footer>
+</body>
+</html>

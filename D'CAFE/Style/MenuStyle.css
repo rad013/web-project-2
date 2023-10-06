@@ -1,0 +1,54 @@
+.menu_4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: aquamarine; */
+
+}
+
+.menu_button{
+    cursor: pointer;
+    display: flex;
+    background-color: white;
+    padding: 1rem;
+    flex-direction: column;
+    color: #000000;
+    margin-left: 2%;
+    margin-right: 2%;
+
+    justify-content: space-around;
+    /* border-radius: 5%; */
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+.menu_price{
+    color: orange;
+}
+
+/* .menu_button:hover{
+    cursor: pointer;
+} */
+
+
+
+@media screen and (max-width: 1100px) {
+    .menu_4{
+        flex-direction: column;
+    }
+
+    .menu_button{
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+
+    img{
+        width: 300px;
+        height: 300px;
+    }
+
+}

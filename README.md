@@ -61,13 +61,3 @@ The web application consists of six pages and two detail pages, each designed to
     • Display information about D’CAFE’s contact details.
 
     • Provide a  form for users to submit message.
-
-**Project Goals**
-
-Our primary goals for this project are as follows:
-
-1. Learn and master the technologies involved in web application development. 
-
-2. Create a web application that provides a pleasant and convenient shopping experience for users.
-
-3. Incorporate use of frameworks to meet project requirements.

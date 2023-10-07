@@ -8,19 +8,19 @@ The web application consists of six pages and two detail pages, each designed to
 
 1. Home Page
 
-    ![image](https://github.com/rad013/web-project-2/assets/115696959/86a1a201-92cd-45b3-aab6-58a73ab5435a)
+    ![image](https://i.imgur.com/QJUo3qY.png)
 
     • Display product categories available at D'CAFE.
    
 2. Our Menus Page
 
-    ![image](https://github.com/rad013/web-project-2/assets/115696959/1064f458-bb02-4982-875a-970b52656480)
+    ![image](https://i.imgur.com/WSjKseL.png)
 
     • Present all products categorized by product type.
 
 3. Detail Menus Page
 
-    ![image](https://github.com/rad013/web-project-2/assets/115696959/21593b07-6b53-482f-a8c6-a1e93eb60473)
+    ![image](https://i.imgur.com/MMgRnck.png)
 
     • Display product information.
    
@@ -28,7 +28,7 @@ The web application consists of six pages and two detail pages, each designed to
    
 4. Cart Page
 
-    ![image](https://github.com/rad013/web-project-2/assets/115696959/a13b39dd-02a4-4149-98c2-7d91b3c7a367)
+    ![image](https://i.imgur.com/62CKLhN.png)
 
     • Display the list of products that users have added to their shopping cart.
 
@@ -38,25 +38,25 @@ The web application consists of six pages and two detail pages, each designed to
    
 5. Promotion Page
 
-    ![image](https://github.com/rad013/web-project-2/assets/115696959/707d54c8-a490-4f1d-8aea-3f5734cbdbc6)
+    ![image](https://i.imgur.com/Q99OdTJ.png)
 
     • Utilize a carousel with Bootstrap animation effects to showcase the latest promotions.
 
 6. Promotion Detail Page
 
-    ![image](https://github.com/rad013/web-project-2/assets/115696959/c8e45a15-681f-4050-bd48-8f59a8719901)
+    ![image](https://i.imgur.com/MLPS8io.png)
 
     • Provide details on promotions.
 
 7. Reservation Page
 
-    ![image](https://github.com/rad013/web-project-2/assets/115696959/4dd23a39-bbac-44d2-bbff-20400d9d6643)
+    ![image](https://i.imgur.com/9C48zM2.png)
 
     • Allow users to choose their preferred date, time, location, and number of guests.
 
 8. Contact Page
 
-    ![image](https://github.com/rad013/web-project-2/assets/115696959/001e314f-10c3-4edb-887c-5d0e95a7d776)
+    ![image](https://i.imgur.com/OIBp284.png)
 
     • Display information about D’CAFE’s contact details.
 

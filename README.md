@@ -60,4 +60,4 @@ The web application consists of six pages and two detail pages, each designed to
 
     • Display information about D’CAFE’s contact details.
 
-    • Provide a  form for users to submit message.
+    • Provide a form for users to submit messages.
